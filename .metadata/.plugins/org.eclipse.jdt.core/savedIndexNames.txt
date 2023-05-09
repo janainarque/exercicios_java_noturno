@@ -1,0 +1,8 @@
+INDEX VERSION 1.131+C:\Users\Aluno Noite\Documents\aulas_java_noturno\.metadata\.plugins\org.eclipse.jdt.core
+934534992.index
+1865797976.index
+718500722.index
+4106492995.index
+428054892.index
+4286366990.index
+1309303861.index

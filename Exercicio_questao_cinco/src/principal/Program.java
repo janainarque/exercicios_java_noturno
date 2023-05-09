@@ -1,0 +1,30 @@
+package principal;
+
+import java.util.Scanner;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner leia = new Scanner(System.in);
+		
+		double valorHora;
+		double quantidadeHorasMes;
+		
+		System.out.println("Quanto você ganha por hora? ");
+		valorHora = leia.nextDouble();
+		
+		System.out.println("Quantas horas trabalhadas no mês? ");
+		quantidadeHorasMes = leia.nextDouble();
+		System.out.println();
+		
+		
+		System.out.println("O seu salário no mês foi de " + (valorHora * quantidadeHorasMes) + " reais");
+		
+		
+		leia.close();
+
+	}
+
+}
