@@ -30,10 +30,10 @@ public class Program {
 		if(media < 6) {
 			System.out.println("Aluno reprovado com a media " + media);
 		}
-		else if(media >= 6 && media <= 7 ) { 
+		else if(media >= 6 && media < 7 ) { 
 			System.out.println("Aluno de recuperação com a media " + media);
 		}
-		else if(media > 7 && media < 10){
+		else if(media >= 7 && media < 10){
 			System.out.println("Aluno aprovado com a media " + media);
 		}
 		else if(media == 10){
