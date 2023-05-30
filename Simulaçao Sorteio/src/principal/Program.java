@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Program {
 
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
 		    Scanner sc = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Program {
 	            System.out.print("Digite o nome da pessoa " + (i + 1) + ": ");
 	            pessoas[i] = sc.nextLine();
 	        }
-	        
+        
 	        // Sorteio do ganhador
 	        int indiceGanhador = random.nextInt(10);
 	        String ganhador = pessoas[indiceGanhador];
@@ -27,6 +27,19 @@ public class Program {
 	        
 	        sc.close();
 
+	} */
+	
+	
+	public static void main(String[] args) {
+		System.out.println(ganhador());
+		
+	}
+	
+	static String ganhador() {
+		Random random = new Random();
+		int numeroSorteado = random.nextInt(11);
+		String[] nomes = {"Janaina", "Weden", "Jose", "Luan", "Claudia", "Mateus", "Leone", "Andre", "Fernanda", "Elson", "Guilherme"};
+		return "O ganhador foi: " + nomes[numeroSorteado];
 	}
 
 }
