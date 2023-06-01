@@ -5,4 +5,6 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="entities.Carro"/>
     <fullyQualifiedTypeName name="entities.Pessoa"/>
+    <fullyQualifiedTypeName name="entities.AreaTerreno"/>
+    <fullyQualifiedTypeName name="entities.Triangulo"/>
 </qualifiedTypeNameHistroy>
