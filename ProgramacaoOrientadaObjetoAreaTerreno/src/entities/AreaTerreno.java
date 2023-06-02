@@ -9,6 +9,7 @@ public class AreaTerreno {
 	
 	public void retornaArea(double larguraInserido, double comprimentoInserido) {
 		areaCalculada = larguraInserido * comprimentoInserido;
+		System.out.println("A area total é de: " + areaCalculada + " metros");
 	}
 
 }

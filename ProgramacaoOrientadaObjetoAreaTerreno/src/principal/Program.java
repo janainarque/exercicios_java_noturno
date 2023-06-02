@@ -9,7 +9,7 @@ public class Program {
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
-		AreaTerreno areaTerreno = new AreaTerreno();
+		AreaTerreno at = new AreaTerreno();
 				
 		System.out.println("Informe a largura: ");
 		double largura = sc.nextDouble();
@@ -19,9 +19,9 @@ public class Program {
 	
 		
 		
-		areaTerreno.retornaArea(largura, comprimento);
+		at.retornaArea(largura, comprimento);
 		
-		System.out.println("A area total é de: " + areaTerreno.areaCalculada + " metros");
+		//System.out.println("A area total é de: " + at.areaCalculada + " metros");
 
 		
 		sc.close();

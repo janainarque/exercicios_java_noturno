@@ -2,7 +2,10 @@ package entities;
 
 public class Triangulo {
 	
-	
+	/*
+	 * meu código
+	 * 
+	 * 
 	public double lado1;
 	public double lado2;
 	public double lado3;
@@ -17,6 +20,26 @@ public class Triangulo {
         } else {
             System.out.println("O triângulo é escaleno!");
         }
+	} */
+	
+	
+	/* 
+	 * código do professor
+	 * 
+	 */
+	public String tipoTriangulo;
+	
+	public String retornaTipoTriangulo(int x, int y, int z) {
+		if(x == y && y == z) {
+			tipoTriangulo = "Triângulo é equilátero";
+			return tipoTriangulo;
+		}else if (x == y || x == z || y == z) {
+			tipoTriangulo = "Triângulo é isósceles";
+			return tipoTriangulo;
+		}else {
+			tipoTriangulo = "Triângulo é isósceles";
+			return tipoTriangulo;
+		}
 	}
 
 }
