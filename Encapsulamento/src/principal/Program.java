@@ -34,7 +34,9 @@ public class Program {
 		
 		conta.sacar(sacar);
 		
-		System.out.println("Saldo : " + conta.getSaldo());
+		//System.out.println("Saldo : " + conta.getSaldo());
+		
+		System.out.println(conta);
 		
 		
 		sc.close();
