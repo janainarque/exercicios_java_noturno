@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="entities.Pessoa"/>
     <fullyQualifiedTypeName name="entities.AreaTerreno"/>
     <fullyQualifiedTypeName name="entities.Triangulo"/>
+    <fullyQualifiedTypeName name="entities.Televisor"/>
 </qualifiedTypeNameHistroy>
