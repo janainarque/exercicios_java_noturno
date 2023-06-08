@@ -12,7 +12,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		Produto produto = new Produto();
 
-        //produto.setDescricao("Produto Exemplo");
+        //produto.setDescricao("Produto");
         System.out.println("Informe o nome do Produto: ");
 		produto.setDescricao(sc.nextLine());
           
