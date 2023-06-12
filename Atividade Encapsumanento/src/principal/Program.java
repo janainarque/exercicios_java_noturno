@@ -12,38 +12,26 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		Produto produto = new Produto();
 
-        //produto.setDescricao("Produto");
+		
         System.out.println("Informe o nome do Produto: ");
 		produto.setDescricao(sc.nextLine());
           
+        System.out.println("Informe a quantidade a ser adicionada no estoque: ");
+		produto.adicionarProduto(sc.nextInt());
         
-		//produto.setQuantidade(10);
-        System.out.println("Informe a quantidade: ");
-		produto.setQuantidade(sc.nextInt());
-        
-        //produto.setPreco(5.0);
-        System.out.println("Informe a quantidade: ");
+        System.out.println("Informe o valor unitário: ");
 		produto.setPreco(sc.nextDouble());
         
-        produto.atualizarValorTotalEstoque();
-        
-        System.out.println();
-        System.out.println("Dados iniciais:");
+
         System.out.println(produto);
         
-        produto.adicionarProduto(5);
+       
+        System.out.println("Quantidade a ser removida: ");
+        produto.removerProduto(sc.nextInt());
         
-        System.out.println();
-        System.out.println("Dados após inserção:");
+        
         System.out.println(produto);
         
-        produto.removerProduto(3);
-        
-        System.out.println();
-        System.out.println("Dados após venda:");
-        System.out.println(produto);
-        
-		
 		sc.close();
 
 	}

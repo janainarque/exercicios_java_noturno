@@ -5,7 +5,6 @@ public class Produto {
 	public String descricao;
 	public int quantidade;
 	public double preco;
-	public double valorTotalEstoque;
 
 	
     public String getDescricao() {
@@ -16,14 +15,6 @@ public class Produto {
         this.descricao = descricao;
     }
     
-    public int getQuantidade() {
-        return quantidade;
-    }
-    
-    public void setQuantidade(int quantidade) {
-        this.quantidade = quantidade;
-    }
-    
     public double getPreco() {
         return preco;
     }
@@ -32,30 +23,28 @@ public class Produto {
         this.preco = preco;
     }
     
-    public double getValorTotalEmEstoque() {
-        return valorTotalEstoque;
-    }
-    
-    public void atualizarValorTotalEstoque() {
-    	valorTotalEstoque = quantidade * preco;
+    public int getQuantidade() {
+        return quantidade;
     }
     
     public void adicionarProduto(int quantidade) {
-        this.quantidade += quantidade;
-        atualizarValorTotalEstoque();
+        this.quantidade += quantidade;  /*this sempre está ligado ao atribudo da classe */
     }
     
     public void removerProduto(int quantidade) {
         this.quantidade -= quantidade;
-        atualizarValorTotalEstoque();
     }
+    
+    public double retornaTotalEmEstoque() {
+        return quantidade * preco;
+    }
+    
     
     @Override
     public String toString() {
-        return "Descrição: " + descricao +
+        return "Produto: " + descricao +
                "\nQuantidade: " + quantidade +
-               "\nPreço: " + preco +
-               "\nValor total em estoque: " + valorTotalEstoque;
+               "\nTotal em estoque: " + String.format("%.2f", retornaTotalEmEstoque());
     }
 
 }
