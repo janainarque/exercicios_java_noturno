@@ -7,6 +7,7 @@ public class Produto {
 	public double preco;
 
 	
+	
     public String getDescricao() {
         return descricao;
     }
